@@ -3,7 +3,7 @@ var port = 3000;
 
 var requestHandler = (request, response) => {
   console.log(request.url);
-  response.end('Hello Node.js Server!');
+  response.end('Hello Node.js Server! ninjanja er sej');
 }
 
 var server = http.createServer(requestHandler);
