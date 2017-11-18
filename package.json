@@ -1,0 +1,11 @@
+{
+  "name": "anjawedell",
+  "version": "1.0.0",
+  "description": "portfolio website for anja wedell",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anja Wedell",
+  "license": "ISC"
+}
