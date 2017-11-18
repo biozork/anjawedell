@@ -1,9 +1,10 @@
+/* global require, console */
 var http = require('http');
 var port = process.env.PORT || 3000;
 
 var requestHandler = (request, response) => {
   console.log(request.url);
-  response.end('Hello Node.js Server! ninjanja er sej');
+  response.end('Hello Node.js Server! ninjanja er meeeeeega sej');
 }
 
 var server = http.createServer(requestHandler);
