@@ -21,6 +21,27 @@ var toolbox = {
     `;
 		var values = {};
 		requestGraphCMS(query, values, callback);
+	},
+	listPortfolioEntries(callback){
+		var query = `{
+			allPortfolioEntries {
+				projectname
+				slug
+				images {
+				  url
+				}
+				categories {
+				  id
+				  name
+				}
+			}
+			allCategories{
+				id
+				name
+			  }
+		}`;
+		var values = {};
+		requestGraphCMS(query, values, callback);
 	}
 }
 

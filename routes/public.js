@@ -3,7 +3,19 @@ var graphCMS = require('../services/graphcms.js');
 var router = express.Router();
 
 router.get('/', function (req, res) {
-	res.render('frontpage', {});
+	graphCMS.listPortfolioEntries(function(response){
+		var response = JSON.parse(response);
+		res.render('frontpage', {data: response.data});
+	})
+	
+});
+
+router.get('/about', function(req, res){
+	res.render('about', {});
+});
+
+router.get('/contact', function(req, res){
+	res.render('contact', {});
 });
 
 router.get('/portfolio/:slug', function (req, res) {

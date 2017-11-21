@@ -71,13 +71,15 @@
 		                    </div>
 		                    <div class="client-info">
 		                        <h3>Categories</h3>
-		                        <span>Logo & Branding</span>
+		                        <% for(var c = 0; c < data.PortfolioEntry.categories.length; c++){ %>
+									<span class="category"><%= data.PortfolioEntry.categories[c].name %></span>
+								<% } %>
 		                    </div>
 							<!--
 		                    <div class="client-info">
 		                        <h3>Date</h3>
 		                        <span>Logo & Branding</span>
-		                    </div>-->
+		                    </div>
 		                    <div class="client-info">
 		                        <h3>Share on</h3>
 		                        <div class="client-info-social">
@@ -95,7 +97,7 @@
                                         </form>
                                     </div>
 		                        </div>
-		                    </div>
+		                    </div>-->
 		                </div>
 		            </div>
 		        </div>
