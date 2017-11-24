@@ -2,6 +2,8 @@
 /* global __dirname */
 
 // Modules
+require('dotenv').config();
+
 var http = require('http');
 var express = require('express');
 var serveStatic = require('serve-static');

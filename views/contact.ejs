@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Ately - Minimal Portfolio Ecommerce Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+		<!-- all css here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/bundle.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- header start -->
+		<% include partials/header.ejs %>
+		<!-- header end -->
+		<!-- Start Offset Wrapper -->
+        <div class="body__overlay"></div>
+        <div class="offset__wrapper">
+            <!-- Start Offset MEnu -->
+            <% include partials/offsetmenu.ejs %>
+            <!-- end offset menu -->
+        </div>
+		<!-- breadcrumb start -->
+		<div class="breadcrumb-area">
+		    <div class="container">
+		        <div class="breadcrumb-text">
+		            <ul>
+                        <li><a href="#">home</a> <i class="fa fa-caret-right"></i></li>
+                        <li>contact us</li>
+                    </ul>
+		        </div>
+		    </div>
+		</div>
+		<!-- breadcrumb end -->
+		<div class="cotact--area pb-100">
+            <div class="map-area">
+                <div id="hastech"></div>
+            </div>
+		    <div class="container-fluid">
+                <div class="contact-wrapper">
+                    <div class="contac-title">
+                        <h3>CONTACT US</h3>
+                    </div>
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-contact-info text-center">
+                                    <i class="fa fa-map-marker"></i>
+                                    <h3>our address</h3>
+                                    <p>666 5th Ave New York, NY, United </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-contact-info extra-contact-info text-center">
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i> 716-298-1822 </li>
+                                        <li><i class="fa fa-envelope-o"></i> <a href="#"> info@plazathemes.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-contact-info text-center">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <h3>openning hour</h3>
+                                    <p>Monday - Friday. 9:00am - 5:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contac-title">
+                        <h3>Give Us An Email</h3>
+                    </div>
+                    <div class="contact-message">
+                        <form id="contact-form" action="assets/mail.php" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="contact-form-style contact-font-one">
+                                        <input name="name" placeholder="Your Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-form-style contact-font-two">
+                                        <input name="email" placeholder="Your Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="contact-form-style contact-font-three">
+                                        <input name="subject" placeholder="Your Title" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="contact-form-style contact-font-four">
+                                        <textarea name="message" placeholder="Message"></textarea>
+                                        <button class="submit" type="submit"><i class="fa fa-envelope-o"></i> Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+		    </div>
+		</div>
+		<!-- brand area start -->
+		<div class="brand-area company-brand-area pt-70 pb-70 border-top">
+		    <div class="container">
+                <div class="brand-hover">
+                    <div class="brand-logo-active owl-carousel">
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/1.png" alt=""></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/2.png" alt=""></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/3.png" alt=""></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/4.png" alt=""></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/5.png" alt=""></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="#"><img src="assets/img/brand-logo/1.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+		</div>
+		<!-- brand area end -->
+		<!-- footer area start -->
+        <% include partials/footer.ejs %>
+        <!-- footer area end -->
+        
+        
+        
+        
+        
+        
+        
+        
+		<!-- all js here -->
+        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/ajax-mail.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMlLa3XrAmtemtf97Z2YpXwPLlimRK7Pk"></script>
+		<script>
+            function init() {
+                var mapOptions = {
+                    zoom: 11,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(40.6700, -73.9400),
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
+                var mapElement = document.getElementById('hastech');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    icon: 'assets/img/icon-img/map.png',
+                    animation:google.maps.Animation.BOUNCE,
+                    title: 'Snazzy!'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', init);
+		</script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

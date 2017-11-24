@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title><%= data.PortfolioEntry.projectname %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+		
+		<!-- all css here -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="/assets/css/bundle.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- header start -->
+		<% include partials/header.ejs %>
+		<!-- header end -->
+		<!-- Start Offset Wrapper -->
+        <div class="body__overlay"></div>
+        <div class="offset__wrapper">
+            <!-- Start Offset MEnu -->
+            <% include partials/offsetmenu.ejs %>
+            <!-- end offset menu -->
+        </div>
+		<!-- breadcrumb start -->
+		<div class="breadcrumb-area">
+		    <div class="container">
+		        <div class="breadcrumb-text">
+		            <ul>
+                        <li><a href="#">home</a> <i class="fa fa-caret-right"></i></li>
+                        <li>Portfolio Single Images</li>
+                    </ul>
+		        </div>
+		    </div>
+		</div>
+		<!-- breadcrumb end -->
+		<div class="single-portfolio-area pb-100">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-md-7">
+                        <div class="single-portfolio-slider-area">
+                            <div class="single-portfolio-slider-active owl-carousel">
+								<% for(var i = 0; i < data.PortfolioEntry.images.length; i++){ %>
+                                <div class="single-portfolio-slider">
+                                    <img src="<%= data.PortfolioEntry.images[i].url %>" alt="">
+                                </div>
+								<% } %>
+                            </div>
+                        </div>
+		            </div>
+		            <div class="col-md-5">
+		                <div class="project-details mt-25">
+		                    <h2><%= data.PortfolioEntry.projectname %></h2>
+		                    <%- data.PortfolioEntry.description %>
+		                    <div class="client-info">
+		                        <h3>Clients</h3>
+		                        <span><%= data.PortfolioEntry.clients %></span>
+		                    </div>
+		                    <div class="client-info">
+		                        <h3>Categories</h3>
+		                        <% for(var c = 0; c < data.PortfolioEntry.categories.length; c++){ %>
+									<span class="category"><%= data.PortfolioEntry.categories[c].name %></span>
+								<% } %>
+		                    </div>
+							<!--
+		                    <div class="client-info">
+		                        <h3>Date</h3>
+		                        <span>Logo & Branding</span>
+		                    </div>
+		                    <div class="client-info">
+		                        <h3>Share on</h3>
+		                        <div class="client-info-social">
+		                            <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+		                        </div>
+		                        <div class="client-info-search">
+                                    <button class="button-search2"><i class="fa fa-search"></i></button>
+                                    <div class="client-search-content">
+                                        <form action="#">
+                                            <input placeholder="Search" type="text">
+                                        </form>
+                                    </div>
+		                        </div>
+		                    </div>-->
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!-- footer area start -->
+        <% include partials/footer.ejs %>
+        <!-- footer area end -->
+        
+        
+        
+        
+        
+        
+        
+        
+		<!-- all js here -->
+        <script src="/assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="/assets/js/isotope.pkgd.min.js"></script>
+        <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/assets/js/jquery.counterup.min.js"></script>
+        <script src="/assets/js/waypoints.min.js"></script>
+        <script src="/assets/js/ajax-mail.js"></script>
+        <script src="/assets/js/owl.carousel.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

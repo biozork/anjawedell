@@ -1266,7 +1266,7 @@ form#searchbox input::-webkit-placeholder {
 .portfolio-img-text img {
     width: 100%;
 }
-.portfolio-menu-style > button {
+.portfolio-menu-style > button{
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 50px;
@@ -1279,6 +1279,19 @@ form#searchbox input::-webkit-placeholder {
 .portfolio-menu-style > button.active {
     border: 1px solid #ebebeb;
     color: #fea1ac;
+}
+.client-info .category{
+	margin-right: 10px;
+	border: 1px solid #ebebeb !important;
+    color: #fea1ac !important;
+	background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #333333;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 30px 9px;
+    text-transform: capitalize;
 }
 .portfolio-menu-style > button:hover {
     color: #fea1ac;
